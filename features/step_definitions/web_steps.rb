@@ -252,3 +252,7 @@ end
 Then /^show me the page$/ do
   save_and_open_page
 end
+
+Then /^I should see page title as "(.*)"$/ do |title|
+  expect(page).to have_title title
+end
